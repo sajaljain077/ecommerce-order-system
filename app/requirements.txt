@@ -1,0 +1,5 @@
+fastAPI==0.115.10
+uvicorn==0.28.0
+SQLAlchemy==1.4.39
+PyMySQL==1.1.1
+pydantic==2.6.3
