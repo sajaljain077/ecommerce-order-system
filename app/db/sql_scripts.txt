@@ -1,1 +1,18 @@
 CREATE SCHEMA `order_db` ;
+
+# User Table
+INSERT INTO `order_db`.`users` (`user_id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('9fe65921-7ed9-4606-8905-9bc83d42cfb8', 'string', 'string', 'jnvknskfnv', '2025-03-02 11:57:30', '2025-03-02 11:57:30');
+INSERT INTO `order_db`.`users` (`user_id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('c9cc480c-ef7f-4a02-bc61-a1d9beab8474', 'string', 'stringsdffvdffv', 'strinjdnckng', '2025-03-02 12:00:30', '2025-03-02 12:00:30');
+
+
+# Order Table Data
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`) VALUES ('1', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Processing', '2025-03-02 17:36:16', '2025-03-02 17:36:16');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`) VALUES ('2', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Processing', '2025-03-02 17:36:16', '2025-03-02 17:36:16');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`) VALUES ('3', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Pending', '2025-03-02 17:36:16', '2025-03-02 17:36:16');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`) VALUES ('4', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Pending', '2025-03-02 17:36:16', '2025-03-02 17:36:16');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`) VALUES ('5', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Pending', '2025-03-02 17:36:16', '2025-03-02 17:36:16');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`, `completion_time`) VALUES ('6', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Completed', '2025-03-02 17:38:55', '2025-03-02 17:38:55', '20');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`, `completion_time`) VALUES ('7', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Completed', '2025-03-02 17:38:55', '2025-03-02 17:38:55', '51');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`, `completion_time`) VALUES ('8', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Completed', '2025-03-02 17:38:55', '2025-03-02 17:38:55', '61');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`, `completion_time`) VALUES ('9', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Completed', '2025-03-02 17:38:55', '2025-03-02 17:38:55', '71');
+INSERT INTO `order_db`.`orders` (`order_id`, `user_id`, `item_ids`, `total_amount`, `status`, `created_at`, `updated_at`, `completion_time`) VALUES ('10', 'c9cc480c-ef7f-4a02-bc61-a1d9beab8474', '1', '100', 'Completed', '2025-03-02 17:38:55', '2025-03-02 17:38:55', '81');

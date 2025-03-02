@@ -47,12 +47,16 @@ This is a backend system built with **FastAPI** to manage and process orders in 
    ```bash
    git clone https://github.com/sajaljain077/ecommerce-order-system.git
    cd ecommerce-order-system
+   ```
 2. **Install Dependencies**:
   ```bash
   pip install -r requirements.txt
+  ```
 3. **Set Up the Database**:
-  1. Create a MySQL database named order_db.
-  2. DATABASE_URL = "mysql+pymysql://{{username}}:{{password}}@localhost/order_db"
+  Find all of the sql queries in the sql_query.txt file
+  DATABASE_URL = "mysql+pymysql://{{username}}:{{password}}@localhost/order_db"
+
 4. **Run the Application**:
   ```bash
   uvicorn app.main:app --reload
+  ```

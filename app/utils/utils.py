@@ -2,6 +2,7 @@ import time
 from app.models.order_db import Order
 from app.db.database import get_db
 from fastapi.encoders import jsonable_encoder
+from datetime import datetime
 
 
 def process_order(queue):
@@ -31,6 +32,7 @@ def process_order(queue):
             # Simulate completion time (5 seconds)
             time.sleep(5)
             order.status = "Completed"
+            order.completion_time = abs((order.created_at -  datetime.now()).total_seconds())
             db.commit()
 
         except Exception as e:

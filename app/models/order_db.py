@@ -12,6 +12,7 @@ class Order(Base):
     status = Column(Enum("Pending", "Processing", "Completed"), default="Pending")
     created_at = Column(DateTime, default=datetime.now())
     updated_at = Column(DateTime, default=datetime.now())
+    completion_time = Column(Integer, nullable=True)
     user = relationship("User", back_populates="orders")
 
 class User(Base):
